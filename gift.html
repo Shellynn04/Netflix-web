@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Netflix Redeem</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: #141414;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+    .bg-movie-wall {
+      width: 100vw;
+      height: 100vh;
+      min-height: 700px;
+      background: url(background.jpg);
+      position: absolute;
+      top: 0; left: 0;
+      z-index: 0;
+      filter: brightness(0.65);
+    }
+    nav.navbar {
+      padding: 0.7rem 5vw;
+      position: fixed;
+      width: 100%;
+      z-index: 100;
+      left: 0; top: 0;
+    }
+    .navbar-brand img {
+      height: 38px;
+      width: auto;
+      display: block;
+    }
+    .main-content {
+      position: absolute;
+      z-index: 10;
+      top: 80px;
+      max-width: 420px;
+      margin: 0 auto;
+      border-radius: 16px;
+      padding: 36px 32px 36px 32px;
+    }
+    .redeem-title {
+      font-size: 2.1rem; font-weight: 700;
+    }
+    .form-label { font-weight: 400; color: #ccc; }
+    .input-redeem {
+      background: transparent;
+      border: none;
+      border-bottom: 2px solid #666;
+      border-radius: 0;
+      color: #fff;
+      font-size: 1.1rem;
+      width: 100%;
+      padding: 0.7rem 0 0.4rem 0;
+      margin-bottom: 32px;
+      box-shadow: none;
+      outline: none;
+    }
+    .input-redeem::placeholder { color: #ffffff; font-size: 0.85em; margin-left: 10px; }
+    .btn-netflix {
+      background: #e50914; color:#fff; font-weight:700; border-radius:5px; border:none;
+    }
+    .btn-netflix:hover { background: #d11e29;}
+    .btn-giftcard { background:#333; color:#fff; font-weight:700; border-radius:5px; margin-top:12px;}
+    .small-note { font-size:0.99rem; color: #aaa;}
+    .footer {
+      background: #181818;
+      color: #fff;
+      padding: 38px 0 0 0;
+      margin-top: 80px;
+    }
+    .footer-links a { color: #ccc; text-decoration: none; margin-right: 24px; font-size: 0.98rem;}
+    .bottom-lang {
+      margin-top: 24px;
+    }
+    @media (max-width: 600px) {
+      .main-content { max-width:96vw; padding:24px 10px; }
+      nav.navbar { padding:12px 3vw;}
+      .footer-links { display:block;}
+    }
+
+    .input-redeem {
+        background: #141414; /* Abu transparan */
+        color: #fff;
+        border: 1px solid #b3b3b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-movie-wall"></div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand navbar-dark">
+    <a class="navbar-brand" href="#">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo">
+    </a>
+    <div class="ms-auto">
+      <a href="index.html" class="btn btn-danger px-4 py-2" style="font-weight:500; border-radius:5px;"> Sign In </a>
+    </div>
+  </nav>
+
+  <!-- Main Redeem Form -->
+  <div class="main-content">
+    <div class="redeem-title mb-3">Tukarkan hadiahmu</div>
+    <div class="mb-2">
+        <h3>Masukkan kodemu di bawah ini untuk memulai.</h3>
+    </div>
+    <form>
+      <input type="text" class="input-redeem" placeholder="Kode atau PIN">
+      <div class="d-grid mb-2">
+        <button class="btn btn-netflix btn-block py-2 fs-5 mb-2">Tukar</button>
+      </div>
+      <div class="d-grid">
+        <button type="button" class="btn btn-giftcard btn-block py-2 fs-6">Beli Kartu Hadiah</button>
+      </div>
+    </form>
+    <div class="small-note mt-3">
+      Perlu bantuan dengan kartu hadiah?<br>
+      Halaman ini dilindungi oleh reCAPTCHA Google untuk memastikan kamu bukan bot.
+      <a href="#" style="color: #57a3e8;">Pelajari selengkapnya.</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer mt-5">
+    <div class="container">
+      <div class="footer-links mb-3">
+        <a href="#">Tanya Jawab</a>
+        <a href="#">Pusat Bantuan</a>
+        <a href="#">Ketentuan Penggunaan</a>
+        <a href="#">Privasi</a>
+        <a href="#">Preferensi Cookie</a>
+        <a href="#">Informasi Perusahaan</a>
+      </div>
+      <div class="bottom-lang">
+        <select class="form-select w-auto d-inline" style="background:#222; color:#fff;">
+          <option>Bahasa Indonesia</option>
+        </select>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

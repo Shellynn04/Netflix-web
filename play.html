@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Netflix Error</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background: url(play.png) center center/cover;
+            height: 100vh;
+            margin: 0;
+            color: white;
+            position: relative;
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar {
+            background-color: #000 !important;
+            opacity: 1;
+        }
+        .navbar-brand img {
+            height: 32px;
+        }
+        .error-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+            max-width: 550px;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .error-content h2 {
+            font-size: 2.5em;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+
+        .error-content p {
+            font-size: 1em;
+            margin-top: 20px;
+        }
+        .error-code-line {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            font-size: 2em;
+        }
+        .vertical-line {
+            width: 2px;
+            height: 38px;
+            background-color: #e50914;
+            margin-right: 14px;
+        }
+        .from-mindhunter {
+            position: absolute;
+            right: 40px;
+            bottom: 16px;
+            font-size: 15px;
+            color: #bfbfbf;
+            letter-spacing: 2px;
+            font-family: 'Arial', sans-serif;
+            opacity: 50%;
+        }
+        @media (max-width: 768px) {
+          .error-content {
+            padding: 20px 10px;
+            font-size: 14px;
+          }
+        }
+        .btn-learn {
+            background-color: #53525267;
+            border: none;
+            color: #fff;
+            margin-left: 10px;
+            font-weight: bold;
+        }
+        .btn-light {
+            font-weight: bold;
+        }
+        .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 25px;
+        }
+        .vertical-line {
+            height: 60px;
+        }
+        
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-dark">
+    <a class="navbar-brand" href="#">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix">
+    </a>
+</nav>
+<div class="error-content">
+    <h2><strong>Pardon the interruption</strong></h2>
+    <p style="white-space: nowrap;">Please visit <span>chrome://settings/content/protectedContent</span> and make sure<br>
+        "Sites can play protected content" is selected.
+    </p>
+    <div class="button-group mb-3" role="group">
+        <a href="#" class="btn btn-light">Netflix Home</a>
+        <a href="#" class="btn btn-learn">Learn More</a>
+    </div>
+    <div class="error-code-line">
+        <div class="vertical-line"></div>
+        <span>Error Code <strong>M7701-1003</strong></span>
+    </div>
+</div>
+<span class="from-mindhunter">FROM <strong>MINDHUNTER</strong></span>
+</body>
+</html>
