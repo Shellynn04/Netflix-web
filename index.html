@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Masuk Netflix</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+        .bg-netflix {
+            background: url('background.jpg') center center/cover no-repeat;
+            height: 100vh;
+            position: relative;
+        }
+        .overlay {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,.45);
+            z-index: 1;
+        }
+        .logo-netflix {
+            position: relative;
+            top: 32px; 
+            left: 50px;
+            z-index: 3;
+            width: 150px;
+            filter: drop-shadow(0px 2px 10px #00000090);
+        }
+        .signin-form {
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0,0,0,0.75);
+            padding: 42px 32px 24px 32px;
+            border-radius: 8px;
+            max-width: 360px;
+            width: 100%;
+            z-index: 2;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.8);
+            color: #fff;
+        }
+        .form-control {
+            background: rgba(200, 200, 200, 0.3); /* Abu transparan */
+            color: #fff;
+            border: 1px solid #b3b3b3;
+        }
+        .form-control::placeholder {
+            color: rgb(185, 185, 185);
+        }
+        .btn-netflix {
+            background-color: #e50914;
+            border: none;
+            color: #fff;
+            font-weight: bold;
+        }
+        .btn-netflix:hover {
+            background-color: #f40612;
+        }
+        .form-check-label, .small-link {
+            color: #b3b3b3;
+            font-size: 0.98em;
+        }
+        .small-link:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+        .form-group label {
+            font-weight: 500;
+        }
+        .form-group ::placeholder {
+            font-size: 0.80em;
+        }
+        .signin-title {
+            font-weight: bold;
+            text-align: left;
+            font-size: 1.7em;
+        }
+        .learn-link {
+            color: #3399ff;
+            border-bottom: 1px solid #3399ff;
+            font-size: 0.90em;
+            text-decoration: none;
+            transition: color 0.2s, border-color 0.2s;
+        }
+        .learn-link:hover {
+            color: #0066cc;
+            border-bottom: 1px solid #0066cc;
+        }
+        .btn-outline-light {
+            font-weight: bold; 
+            font-size: 0.80em; 
+        }
+
+        .small-link {
+            font-size: 0.90em;
+        }
+
+        .text-font {
+            font-size: 0.90em;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-netflix">
+        <div class="overlay"></div>
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" class="logo-netflix" alt="Netflix Logo">
+        <div class="signin-form">
+            <h4 class="signin-title mb-4">Masuk</h4>
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Email atau nomor ponsel" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Kata sandi" required>
+                </div>
+                <button type="submit" class="btn btn-netflix btn-block text-font">Masuk</button>
+                <div class="text-center text-font my-2">ATAU</div>
+                <button type="button" class="btn btn-outline-light btn-block mb-2">Gunakan Kode Masuk</button>
+                <div class="text-center mb-2">
+                    <a href="#" class="small-link">Lupa sandi?</a>
+                </div>
+                <div class="form-check mb-2">
+                    <input type="checkbox" class="form-check-input" id="ingatSaya">
+                    <label class="form-check-label text-font" for="ingatSaya">Ingat saya</label>
+                </div>
+                <div class="mt-2 text-font">
+                    Baru di Netflix? <a href="#" class="small-link">Daftar sekarang.</a>
+                </div>
+            </form>
+            <p class="mt-3" style="font-size:0.90em; color:#b3b3b3;">
+                Halaman ini dilindungi oleh reCAPTCHA Google untuk memastikan kamu bukan bot.
+            </p>
+            <a href="#" class="learn-link text-font">Pelajari selengkapnya.</a>
+        </div>
+    </div>
+</body>
+</html>
